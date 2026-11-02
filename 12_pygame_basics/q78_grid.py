@@ -16,7 +16,7 @@ screen = pygame.display.set_mode((600, 400))
 x = 100
 y = 50
 dx = 0
-dy = 1
+dy = 0
 running = True
 while running:
     for event in pygame.event.get():
