@@ -51,6 +51,3 @@ while running:
     pygame.display.flip()
     clock.tick(10)
 pygame.quit()
-
-if x == food_x and y == food_y:
-    nigger = 1
