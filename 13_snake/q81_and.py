@@ -13,3 +13,14 @@
 #
 # Before you run it, write down the EXACT output, line by line.
 
+a = 5
+b = 3 
+
+if a == 5 and b == 3:
+    print("one")
+if a == 5 and b == 4:
+    print("one")
+if a == 6 and b == 4:
+    print("one")
+print("done")
+

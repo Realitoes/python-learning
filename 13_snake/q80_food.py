@@ -42,7 +42,7 @@ while running:
             elif event.key == pygame.K_UP:
                 dx = 0
                 dy = -20
-
+        
     x = x + dx
     y = y + dy
     screen.fill("black")
@@ -51,3 +51,6 @@ while running:
     pygame.display.flip()
     clock.tick(10)
 pygame.quit()
+
+if x == food_x and y == food_y:
+    nigger = 1
