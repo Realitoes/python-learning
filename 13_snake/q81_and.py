@@ -19,8 +19,8 @@ b = 3
 if a == 5 and b == 3:
     print("one")
 if a == 5 and b == 4:
-    print("one")
+    print("two")
 if a == 6 and b == 4:
-    print("one")
+    print("three")
 print("done")
 
