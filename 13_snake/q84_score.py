@@ -18,6 +18,7 @@ dx = 0
 dy = 0
 food_x = 20 * random.randint(0, 29)
 food_y = 20 * random.randint(0, 19)
+score = 0
 running = True
 
 while running:
@@ -43,15 +44,16 @@ while running:
 
     if x < 0 or x > 580 or y < 0 or y > 380:
         running = False
-    if y < 0 or y > 380:
-        running = False
     
     if x == food_x and y == food_y:
         food_x = 20 * random.randint(0, 29)
         food_y = 20 * random.randint(0, 19)
+        score = score + 1
+    
     screen.fill("black")
     pygame.draw.rect(screen, "green", (x, y, 20, 20))
     pygame.draw.rect(screen, "red", (food_x, food_y, 20, 20))
     pygame.display.flip()
     clock.tick(10)
+print("Score:", score)
 pygame.quit()
