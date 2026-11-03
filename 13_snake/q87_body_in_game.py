@@ -64,3 +64,5 @@ pygame.quit()
 
 body.append([x, y])
 body.pop(0)
+
+#i'm so gay
