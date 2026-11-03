@@ -41,6 +41,12 @@ while running:
 
     x = x + dx
     y = y + dy
+
+    if x < 0 or x > 580 or y < 0 or y > 380:
+        running = False
+    if y < 0 or y > 380:
+        running = False
+    
     if x == food_x and y == food_y:
         food_x = 20 * random.randint(0, 29)
         food_y = 20 * random.randint(0, 19)
